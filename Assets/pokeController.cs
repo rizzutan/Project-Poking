@@ -5,11 +5,12 @@ using UnityEngine;
 public class pokeController : MonoBehaviour
 {
     public bool leftHanded = false;
-    public float speed = 1f;
+    public float speed = 3f;
     public float range = 10f;
     public float radius = 1f;
     public float minSpeed = 1f;
     public float minDistance = 1f;
+    public float maxDistance = 6f;
     private Transform stick;
     public Transform restPos;
     private Vector3 lastMousePosition;
@@ -49,9 +50,8 @@ public class pokeController : MonoBehaviour
             float horMovement = Input.GetAxis("Mouse X");
             Vector3 pokeMovement = transform.TransformDirection(new Vector3(0f, 0f, horMovement));
             stick.position += pokeMovement * -speed * Time.deltaTime;
-
+            //check mouse speed and displacement
             float displacement = Mathf.Abs(Vector3.Distance(restPos.position, stick.position));
-            //check mouse speed
             if (mouseSpeed >= minSpeed && displacement >= minDistance);
             {
                 poke = true;
