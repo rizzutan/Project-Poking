@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class pokeController : MonoBehaviour
 {
+    public bool leftHanded = false;
     public float speed = 1f;
+    public float range = 10f;
+    public float radius = 1f;
+    public float minSpeed = 1f;
+    public float minDistance = 1f;
     private Transform stick;
     public Transform restPos;
+    private Vector3 lastMousePosition;
+    private LayerMask layerMask;
+    private bool poke = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,25 +27,55 @@ public class pokeController : MonoBehaviour
                 break;
             }
         }
+        if (leftHanded == true)
+        {
+            restPos.position = new Vector3(-restPos.position.x, restPos.position.y, restPos.position.z);
+        }
+        stick.position = restPos.position;
+        layerMask = LayerMask.GetMask("Poke");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //calculate mouse speed
+        Vector3 currentMousePosition = Input.mousePosition;
+        float mouseSpeed = (currentMousePosition - lastMousePosition).magnitude / Time.deltaTime;
+        lastMousePosition = currentMousePosition;
+
         if (Input.GetKey(KeyCode.Mouse0))
         {
             //move relative to the rotation
             float horMovement = Input.GetAxis("Mouse X");
             Vector3 pokeMovement = transform.TransformDirection(new Vector3(0f, 0f, horMovement));
-            stick.transform.position += pokeMovement * -speed * Time.deltaTime;
+            stick.position += pokeMovement * -speed * Time.deltaTime;
 
+            float displacement = Mathf.Abs(Vector3.Distance(restPos.position, stick.position));
+            //check mouse speed
+            if (mouseSpeed >= minSpeed && displacement >= minDistance);
+            {
+                poke = true;
+            }
 
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            stick.transform.position = restPos.position;
+            //reset mouse position
+            stick.position = restPos.position;
         }
+        if (poke == true)
+        {
+            RaycastHit hit;
 
-
+            if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+            {
+                Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
+                for (int i = 0; i < colliderArray.Length; i++)
+                {
+                    colliderArray[i].GetComponent<Poke>().PokeObject();
+                }
+            }
+            poke = false;
+        }
     }
 }
