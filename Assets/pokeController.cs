@@ -52,7 +52,7 @@ public class pokeController : MonoBehaviour
             stick.position += pokeMovement * -speed * Time.deltaTime;
             //check mouse speed and displacement
             float displacement = Mathf.Abs(Vector3.Distance(restPos.position, stick.position));
-            if (mouseSpeed >= minSpeed && displacement >= minDistance);
+            if (displacement >= minDistance)
             {
                 poke = true;
             }
