@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class applyForce : MonoBehaviour
 {
-    public float gravityAcc = 3;
+    public float gravityAcc = 9;
     public float gravity = 9;
     private bool gravityFlipped = false;
     private Rigidbody rb;
@@ -20,7 +20,7 @@ public class applyForce : MonoBehaviour
     {
         if (gravityFlipped)
         {
-            rb.AddForce(Vector2.up * gravityAcc, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * gravityAcc, ForceMode.Impulse);
         }
         rb.velocity = new Vector3(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -gravity, gravity), rb.velocity.z);
     }
