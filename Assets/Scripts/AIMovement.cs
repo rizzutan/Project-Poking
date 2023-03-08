@@ -12,7 +12,9 @@ public class AIMovement : MonoBehaviour
     private bool reachedWaypoint = true;
     private Transform randomTarget;
     public float radiusRange = 2f;
-    // Start is called before the first frame update
+    private float timerDuration = 3f;
+    private float elapsedTime = 100f;
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -21,22 +23,27 @@ public class AIMovement : MonoBehaviour
         waypoints = parentWaypoint.GetComponentsInChildren<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float velocity = Mathf.Abs(rb.velocity.magnitude);
         animator.SetFloat("Velocity", velocity);
-            if (reachedWaypoint == true)
+
+        if (reachedWaypoint == true && elapsedTime >= timerDuration)
         {
             int randomIndex = Random.Range(0, waypoints.Length);
             randomTarget = waypoints[randomIndex];
             agent.SetDestination(randomTarget.position);
             reachedWaypoint = false;
         }
+
         float distance = Vector3.Distance(transform.position, randomTarget.position);
-        if (distance <= radiusRange)
+        if (distance <= radiusRange && reachedWaypoint == false)
         {
             reachedWaypoint = true;
+            elapsedTime = 0f;
+            timerDuration = Random.Range(2, 10);
         }
+
+        elapsedTime += Time.deltaTime;
     }
 }

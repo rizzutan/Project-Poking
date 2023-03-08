@@ -47,9 +47,9 @@ public class pokeController : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             //move relative to the rotation
-            float horMovement = Input.GetAxis("Mouse X");
+            float horMovement = Input.GetAxis("Mouse Y");
             Vector3 pokeMovement = transform.TransformDirection(new Vector3(0f, 0f, horMovement));
-            stick.position += pokeMovement * -speed * Time.deltaTime;
+            stick.position += pokeMovement * speed * Time.deltaTime;
             //check mouse speed and displacement
             float displacement = Mathf.Abs(Vector3.Distance(restPos.position, stick.position));
             if (displacement >= minDistance)
