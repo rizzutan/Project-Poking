@@ -28,14 +28,14 @@ public class SwapStatePoke : MonoBehaviour
         }
         if (poke.poked == true && cooldown == false)
         {
-            poke.poked = false;
             pokeCount += 1;
             cooldown = true;
             elapsedTime = 0;
         }
         if (pokeCount >= maxPokeCount)
         {
-            Instantiate(objectSwap, transform.position, Quaternion.identity);
+            GameObject newGameObject = Instantiate(objectSwap, transform.position, Quaternion.identity);
+            newGameObject.transform.rotation = transform.rotation;
             Destroy(gameObject);
         }
     }
