@@ -44,6 +44,9 @@ public class flipGravityPoke : MonoBehaviour
 
             TryPlaySound();
         }
+    }
+    private void LateUpdate()
+    {
         poke.poked = false;
     }
 

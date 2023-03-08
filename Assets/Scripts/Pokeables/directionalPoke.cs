@@ -46,6 +46,9 @@ public class directionalPoke : MonoBehaviour
 
             TryPlaySound();
         }
+    }
+    private void LateUpdate()
+    {
         poke.poked = false;
     }
 

@@ -42,6 +42,10 @@ public class InstantiatePoke : MonoBehaviour
 
             TryPlaySound();
         }
+    }
+
+    private void LateUpdate()
+    {
         poke.poked = false;
     }
 

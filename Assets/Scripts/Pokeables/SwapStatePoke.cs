@@ -38,6 +38,10 @@ public class SwapStatePoke : MonoBehaviour
             Instantiate(objectSwap, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+    }
+
+    private void LateUpdate()
+    {
         poke.poked = false;
     }
 

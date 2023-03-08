@@ -30,6 +30,9 @@ public class activateRBPoke : MonoBehaviour
 
             TryPlaySound();
         }
+    }
+    private void LateUpdate()
+    {
         poke.poked = false;
     }
 
