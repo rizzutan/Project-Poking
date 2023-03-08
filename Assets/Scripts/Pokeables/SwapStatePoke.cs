@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstantiatePoke : MonoBehaviour
+public class SwapStatePoke : MonoBehaviour
 {
     public bool cooldown = false;
     private float timerDuration = 1f;
     private float elapsedTime = 0f;
+    private float pokeCount = 0f;
     private Poke poke;
-    private Rigidbody rb;
-    public Vector3 offset;
-    public GameObject spawnObject;
+    [SerializeField] int maxPokeCount;
+    [SerializeField] GameObject objectSwap;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +29,14 @@ public class InstantiatePoke : MonoBehaviour
         if (poke.poked == true && cooldown == false)
         {
             poke.poked = false;
+            pokeCount += 1;
             cooldown = true;
             elapsedTime = 0;
-            GameObject newObject = Instantiate(spawnObject, Vector3.zero, Quaternion.identity);
-            newObject.transform.position = transform.position + offset;
+        }
+        if (pokeCount >= maxPokeCount)
+        {
+            Instantiate(objectSwap, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
         poke.poked = false;
     }

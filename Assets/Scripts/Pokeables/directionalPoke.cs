@@ -11,11 +11,18 @@ public class directionalPoke : MonoBehaviour
     private Transform cameraPos;
     private Poke poke;
     private Rigidbody rb;
+
+    AudioController ac;
+    [SerializeField] string soundName;
+    [SerializeField] bool randomSound;
+
     // Start is called before the first frame update
     void Start()
     {
         GameObject camera = GameObject.FindWithTag("MainCamera");
         cameraPos = camera.GetComponent<Transform>();
+
+        ac = GetComponent<AudioController>();
         poke = GetComponent<Poke>();
         rb = GetComponent<Rigidbody>();
     }
@@ -36,7 +43,28 @@ public class directionalPoke : MonoBehaviour
             rb.AddForce(force * direction, ForceMode.Impulse);
             cooldown = true;
             elapsedTime = 0;
+
+            TryPlaySound();
         }
         poke.poked = false;
+    }
+
+    void TryPlaySound()
+    {
+        if ((soundName == null || soundName == "") && !randomSound)
+        {
+            return;
+        }
+        else
+        {
+            if (randomSound)
+            {
+                ac.PlayRandomAudio();
+            }
+            else
+            {
+                ac.PlayAudio(soundName);
+            }
+        }
     }
 }

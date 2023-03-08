@@ -52,9 +52,13 @@ public class pokeController : MonoBehaviour
             stick.localPosition = new Vector3(stick.localPosition.x, stick.localPosition.y, Mathf.Clamp(stick.localPosition.z + (horMovement * speed * Time.deltaTime), restPos.localPosition.z, maxDistance));
             //check mouse speed and displacement
             float displacement = Mathf.Abs(Vector3.Distance(restPos.position, stick.position));
-            if (displacement >= minDistance)
+            if (displacement >= minDistance && poke == false)
             {
                 poke = true;
+                Poke();
+            } else if (poke == true && displacement < minDistance)
+            {
+                poke = false;
             }
 
         }
@@ -65,20 +69,24 @@ public class pokeController : MonoBehaviour
         }
         if (poke == true)
         {
-            RaycastHit hit;
+            
+        }
+    }
 
-            if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+    void Poke()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+        {
+            Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
+            for (int i = 0; i < colliderArray.Length; i++)
             {
-                Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
-                for (int i = 0; i < colliderArray.Length; i++)
+                if (colliderArray[i].GetComponent<Poke>())
                 {
-                    if (colliderArray[i].GetComponent<Poke>())
-                    {
-                        colliderArray[i].GetComponent<Poke>().PokeObject();
-                    }
+                    colliderArray[i].GetComponent<Poke>().PokeObject();
                 }
             }
-            poke = false;
         }
     }
 }
