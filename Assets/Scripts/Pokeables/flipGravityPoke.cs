@@ -8,10 +8,15 @@ public class flipGravityPoke : MonoBehaviour
     private float timerDuration = 1f; 
     private float elapsedTime = 0f;
     private Poke poke;
+
+    AudioController ac;
+    [SerializeField] string soundName;
+    [SerializeField] bool randomSound;
     // Start is called before the first frame update
     void Start()
     {
         poke = GetComponent<Poke>();
+        ac = GetComponent<AudioController>();
     }
 
     // Update is called once per frame
@@ -36,7 +41,28 @@ public class flipGravityPoke : MonoBehaviour
             poke.poked = false;
             cooldown = true;
             elapsedTime = 0;
+
+            TryPlaySound();
         }
         poke.poked = false;
+    }
+
+    void TryPlaySound()
+    {
+        if ((soundName == null || soundName == "") && !randomSound)
+        {
+            return;
+        }
+        else
+        {
+            if (randomSound)
+            {
+                ac.PlayRandomAudio();
+            }
+            else
+            {
+                ac.PlayAudio(soundName);
+            }
+        }
     }
 }

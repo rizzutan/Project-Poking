@@ -255,11 +255,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHanded: 0
   speed: 10
-  range: 10
+  range: 3
   radius: 1
   minSpeed: 3
-  minDistance: 2
-  maxDistance: 6
+  minDistance: 0.7
+  maxDistance: 1.2
   restPos: {fileID: 5300074425747727077}
 --- !u!1 &5300074425747727076
 GameObject:

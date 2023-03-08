@@ -72,6 +72,35 @@ public class AudioController : MonoBehaviour
         a.source.Play();
     }
 
+    public void PlayRandomAudio()
+    {
+        Audio a = null;
+        List<Audio> audios = new List<Audio>();
+
+        foreach (Audio aFound in audioObjects)
+        {
+            audios.Add(aFound);
+        }
+
+        a = audios[Random.Range(0, audios.Count)];
+
+        if (a == null)
+        {
+            Debug.LogWarning("Audio: " + a + " not found!");
+            return;
+        }
+        if (a.pitchVariance != 0)
+        {
+            a.source.pitch = 1 + UnityEngine.Random.Range(-a.pitchVariance, a.pitchVariance);
+        }
+        else
+        {
+            a.source.pitch = 1;
+        }
+        //print(a.source.clip.name);
+        a.source.Play();
+    }
+
     public void StopAudio(string name)
     {
         Audio a = null;
