@@ -35,7 +35,7 @@ public class SwapStatePoke : MonoBehaviour
         }
         if (pokeCount >= maxPokeCount)
         {
-            Instantiate(objectSwap, transform.position, Quaternion.identity);
+            Instantiate(objectSwap, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
