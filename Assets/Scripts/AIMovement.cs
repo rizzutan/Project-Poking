@@ -14,6 +14,7 @@ public class AIMovement : MonoBehaviour
     public float radiusRange = 2f;
     private float timerDuration = 3f;
     private float elapsedTime = 100f;
+    private Vector3 previousPosition;
 
     void Start()
     {
@@ -25,8 +26,10 @@ public class AIMovement : MonoBehaviour
 
     void Update()
     {
-        float velocity = Mathf.Abs(rb.velocity.magnitude);
-        animator.SetFloat("Velocity", velocity);
+        Vector3 displacement = transform.position - previousPosition;
+        float displacementMag = displacement.magnitude * 100;
+        previousPosition = transform.position;
+        animator.SetFloat("Velocity", displacementMag);
 
         if (reachedWaypoint == true && elapsedTime >= timerDuration)
         {
