@@ -72,7 +72,10 @@ public class pokeController : MonoBehaviour
                 Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
                 for (int i = 0; i < colliderArray.Length; i++)
                 {
-                    colliderArray[i].GetComponent<Poke>().PokeObject();
+                    if (colliderArray[i].GetComponent<Poke>())
+                    {
+                        colliderArray[i].GetComponent<Poke>().PokeObject();
+                    }
                 }
             }
             poke = false;
