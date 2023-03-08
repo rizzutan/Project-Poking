@@ -36,7 +36,6 @@ public class specificDirectionPoke : MonoBehaviour
         }
             if (poke.poked == true && cooldown == false)
         {
-            poke.poked = false;
             Vector3 direction = transform.position - transform.position + directionForce;
             direction = direction.normalized;
             rb.AddForce(force * direction, ForceMode.Impulse);

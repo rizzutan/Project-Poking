@@ -37,13 +37,11 @@ public class directionalPoke : MonoBehaviour
         }
             if (poke.poked == true && cooldown == false)
         {
-            poke.poked = false;
             Vector3 direction = transform.position - cameraPos.transform.position;
             direction = direction.normalized;
             rb.AddForce(force * direction, ForceMode.Impulse);
             cooldown = true;
             elapsedTime = 0;
-
             TryPlaySound();
         }
     }

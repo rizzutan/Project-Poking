@@ -38,10 +38,8 @@ public class flipGravityPoke : MonoBehaviour
                     forceScript.FlipGravity();
                 }
             }
-            poke.poked = false;
             cooldown = true;
             elapsedTime = 0;
-
             TryPlaySound();
         }
     }

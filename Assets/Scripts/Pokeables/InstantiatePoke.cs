@@ -34,12 +34,10 @@ public class InstantiatePoke : MonoBehaviour
         }
         if (poke.poked == true && cooldown == false)
         {
-            poke.poked = false;
             cooldown = true;
             elapsedTime = 0;
             GameObject newObject = Instantiate(spawnObject, Vector3.zero, Quaternion.identity);
             newObject.transform.position = transform.position + offset;
-
             TryPlaySound();
         }
     }
