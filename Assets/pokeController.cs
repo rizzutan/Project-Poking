@@ -56,7 +56,7 @@ public class pokeController : MonoBehaviour
             {
                 poke = true;
                 Poke();
-            } else if (poke == true && displacement < minDistance)
+            } else if (displacement < minDistance)
             {
                 poke = false;
             }
@@ -66,10 +66,6 @@ public class pokeController : MonoBehaviour
         {
             //reset mouse position
             stick.position = restPos.position;
-        }
-        if (poke == true)
-        {
-            
         }
     }
 

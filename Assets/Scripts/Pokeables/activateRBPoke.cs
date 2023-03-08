@@ -25,9 +25,7 @@ public class activateRBPoke : MonoBehaviour
             if (poke.poked == true)
         {
             print("poked!");
-            poke.poked = false;
             rb.isKinematic = false;
-
             TryPlaySound();
         }
     }
