@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ragdoll4
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 9255a7ef846082b4abb859e7a48861f8, type: 3}
-  volume: 1
+  volume: 0.3
   pitchVariance: 0.2
   loop: 0
   isMusic: 0
