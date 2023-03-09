@@ -2592,7 +2592,7 @@ GameObject:
   - component: {fileID: 5431401730476987309}
   - component: {fileID: 4108726876545925468}
   m_Layer: 0
-  m_Name: VaseBroken
+  m_Name: VaseBroken3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

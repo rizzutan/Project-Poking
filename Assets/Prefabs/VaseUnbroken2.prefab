@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8173540791527693523}
   - component: {fileID: 8173540791527693522}
   m_Layer: 3
-  m_Name: VaseUnbroken
+  m_Name: VaseUnbroken2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7799035726472569186}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 1.626, y: 2.276, z: -1.9478787}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7799035726472569186}
-  m_Mesh: {fileID: 2212009239438826721, guid: a5d2372de5487e240a914a041223ce1c, type: 3}
+  m_Mesh: {fileID: 8552134717624371188, guid: a5d2372de5487e240a914a041223ce1c, type: 3}
 --- !u!23 &7141189650004935726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPokeCount: 0
-  objectSwap: {fileID: 8021171884576382754, guid: 0636d5d9d67861c4ca5cb8664dfc622a,
+  objectSwap: {fileID: 8021171884576382754, guid: 8aa10127209c5894aa0d7bef84ba85e9,
     type: 3}
 --- !u!114 &8173540791527693532
 MonoBehaviour:
@@ -140,8 +140,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0076316353, y: 0.0066216337, z: 0.0126239}
-  m_Center: {x: 0.0060931193, y: 0.00008815558, z: -0.00039711245}
+  m_Size: {x: 0.012, y: 0.012, z: 0.025}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8173540791527693522
 Rigidbody:
   m_ObjectHideFlags: 0
