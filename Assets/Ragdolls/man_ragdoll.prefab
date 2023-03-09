@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7745370026283071416}
-  m_Layer: 0
+  - component: {fileID: 3491800532390153672}
+  - component: {fileID: 1664201691807781157}
+  - component: {fileID: 8376041625232039224}
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +35,52 @@ Transform:
   m_Father: {fileID: 283129074463100630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3491800532390153672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252504629063316337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1664201691807781157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252504629063316337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8376041625232039224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252504629063316337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &299725010905853028
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6789026929924265258}
   - component: {fileID: 8765555127836089485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +176,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4887761939385778608}
-  m_Layer: 0
+  - component: {fileID: 2381040719734833951}
+  - component: {fileID: 2764188299526473220}
+  - component: {fileID: 8002276322548735803}
+  m_Layer: 3
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,6 +202,52 @@ Transform:
   m_Father: {fileID: 4233626727420587823}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2381040719734833951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634231193762383603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2764188299526473220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634231193762383603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8002276322548735803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634231193762383603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &773700108793551914
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +257,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8955215349460037413}
-  m_Layer: 0
+  - component: {fileID: 2749574777487632938}
+  - component: {fileID: 911445515060606106}
+  - component: {fileID: 5932308262623959556}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +283,52 @@ Transform:
   m_Father: {fileID: 8087840702274919766}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2749574777487632938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773700108793551914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &911445515060606106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773700108793551914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5932308262623959556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773700108793551914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &1144234538374684069
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +338,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6190864851689522674}
-  m_Layer: 0
+  - component: {fileID: 654554670422363207}
+  - component: {fileID: 4516068222795681419}
+  - component: {fileID: 980518302260709590}
+  m_Layer: 3
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,6 +364,52 @@ Transform:
   m_Father: {fileID: 5873440616317040225}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &654554670422363207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144234538374684069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4516068222795681419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144234538374684069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &980518302260709590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144234538374684069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &1284703620677010298
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3000333318028709264}
   - component: {fileID: 7964674360360481920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +531,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1808554017967428182}
-  m_Layer: 0
+  - component: {fileID: 7184561222063803159}
+  - component: {fileID: 4495966859828405772}
+  - component: {fileID: 5522836824280467214}
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,6 +556,52 @@ Transform:
   m_Father: {fileID: 114415139298672644}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7184561222063803159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456389287764727915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4495966859828405772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456389287764727915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5522836824280467214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456389287764727915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &1539470426704604948
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +613,10 @@ GameObject:
   - component: {fileID: 5873440616317040225}
   - component: {fileID: 1898351555358669225}
   - component: {fileID: 1898351555358669226}
-  m_Layer: 0
+  - component: {fileID: 8046129213576019809}
+  - component: {fileID: 8924440592954728243}
+  - component: {fileID: 6394354187102774985}
+  m_Layer: 3
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +649,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539470426704604948}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -422,6 +670,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6918085, y: 0.95509386, z: 0.86158764}
   m_Center: {x: -0.00021058321, y: 0.2825089, z: -0.046931297}
+--- !u!114 &8046129213576019809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539470426704604948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8924440592954728243}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6394354187102774985}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8924440592954728243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539470426704604948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6394354187102774985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539470426704604948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &1628373967822883919
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2149050261264652021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: man_ragdoll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628373967822883919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -472,7 +790,10 @@ GameObject:
   - component: {fileID: 1898351557063151842}
   - component: {fileID: 1898351557063151844}
   - component: {fileID: 1898351557063151843}
-  m_Layer: 0
+  - component: {fileID: 5179002703350842613}
+  - component: {fileID: 6871743110007648417}
+  - component: {fileID: 7228087762248854163}
+  m_Layer: 3
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +824,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749488842656183128}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -571,6 +892,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5179002703350842613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749488842656183128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6871743110007648417}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7228087762248854163}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6871743110007648417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749488842656183128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7228087762248854163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749488842656183128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &1907513860098064359
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +971,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8675305554757650563}
-  m_Layer: 0
+  - component: {fileID: 3204087551650732089}
+  - component: {fileID: 1549828645896013505}
+  - component: {fileID: 7484133030874970750}
+  m_Layer: 3
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,6 +997,52 @@ Transform:
   m_Father: {fileID: 2255360920864874865}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3204087551650732089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907513860098064359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1549828645896013505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907513860098064359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7484133030874970750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907513860098064359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2347956527735534519
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +1052,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114415139298672644}
-  m_Layer: 0
+  - component: {fileID: 4014651606439705929}
+  - component: {fileID: 7789575183753807648}
+  - component: {fileID: 6904539269208391288}
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,6 +1078,52 @@ Transform:
   m_Father: {fileID: 7616284474792987011}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4014651606439705929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347956527735534519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7789575183753807648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347956527735534519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6904539269208391288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347956527735534519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2544452025587260463
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +1133,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1443785693755354280}
-  m_Layer: 0
+  - component: {fileID: 7184805554670260440}
+  - component: {fileID: 9048907282655011658}
+  - component: {fileID: 7748506208136944791}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,6 +1159,52 @@ Transform:
   m_Father: {fileID: 4218871573148455108}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7184805554670260440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544452025587260463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9048907282655011658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544452025587260463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7748506208136944791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544452025587260463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2610132419346708690
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +1214,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4639878017760109789}
-  m_Layer: 0
+  - component: {fileID: 852853755476135368}
+  - component: {fileID: 4269926032734045595}
+  - component: {fileID: 6195825400717140213}
+  m_Layer: 3
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,6 +1241,52 @@ Transform:
   m_Father: {fileID: 8975406619902644199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852853755476135368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610132419346708690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4269926032734045595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610132419346708690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6195825400717140213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610132419346708690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2700468217581498051
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +1296,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 589839154364480242}
-  m_Layer: 0
+  - component: {fileID: 5393325850712736444}
+  - component: {fileID: 4019380780910626740}
+  - component: {fileID: 1960193448635314393}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,6 +1322,52 @@ Transform:
   m_Father: {fileID: 4639878017760109789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5393325850712736444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700468217581498051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4019380780910626740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700468217581498051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1960193448635314393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700468217581498051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2881407861282898867
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +1377,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6693813048281709148}
-  m_Layer: 0
+  - component: {fileID: 708390117072151857}
+  - component: {fileID: 4367752098242930283}
+  - component: {fileID: 6594698320845646843}
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,6 +1403,52 @@ Transform:
   m_Father: {fileID: 3006129720330160405}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &708390117072151857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881407861282898867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4367752098242930283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881407861282898867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6594698320845646843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881407861282898867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2914285538347713303
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +1458,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8382752154383470787}
-  m_Layer: 0
+  - component: {fileID: 79114701186501045}
+  - component: {fileID: 1955345686996278775}
+  - component: {fileID: 6480569430692985186}
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,6 +1483,52 @@ Transform:
   m_Father: {fileID: 6693813048281709148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &79114701186501045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2914285538347713303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1955345686996278775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2914285538347713303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6480569430692985186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2914285538347713303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &2920914188468310409
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +1538,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3612433433817360310}
-  m_Layer: 0
+  - component: {fileID: 1755661790998225462}
+  - component: {fileID: 6511961794863451173}
+  - component: {fileID: 6976283670736256371}
+  m_Layer: 3
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,6 +1564,52 @@ Transform:
   m_Father: {fileID: 1308715454616573794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755661790998225462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920914188468310409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6511961794863451173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920914188468310409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6976283670736256371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920914188468310409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3212510687725675605
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +1622,10 @@ GameObject:
   - component: {fileID: 1898351556369731518}
   - component: {fileID: 1898351556369731519}
   - component: {fileID: 1898351556369731517}
-  m_Layer: 0
+  - component: {fileID: 5609923771950758845}
+  - component: {fileID: 9149336445599309364}
+  - component: {fileID: 8655061027230272924}
+  m_Layer: 3
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +1657,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3212510687725675605}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -939,6 +1725,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5609923771950758845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212510687725675605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9149336445599309364}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8655061027230272924}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9149336445599309364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212510687725675605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8655061027230272924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212510687725675605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3278277171637144066
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +1804,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1585633280930977152}
-  m_Layer: 0
+  - component: {fileID: 8187003145232541186}
+  - component: {fileID: 6883433399274989062}
+  - component: {fileID: 5741185879387421858}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,6 +1829,52 @@ Transform:
   m_Father: {fileID: 8955215349460037413}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8187003145232541186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278277171637144066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6883433399274989062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278277171637144066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5741185879387421858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278277171637144066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3296413092544152678
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +1884,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626385496888995084}
-  m_Layer: 0
+  - component: {fileID: 1598564627872675074}
+  - component: {fileID: 7524167739835062853}
+  - component: {fileID: 8583584046755607462}
+  m_Layer: 3
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,6 +1910,52 @@ Transform:
   m_Father: {fileID: 2255360920864874865}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598564627872675074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296413092544152678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7524167739835062853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296413092544152678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8583584046755607462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296413092544152678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3460389138058326814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1968,10 @@ GameObject:
   - component: {fileID: 1898351555804551607}
   - component: {fileID: 1898351555804551592}
   - component: {fileID: 1898351555804551606}
-  m_Layer: 0
+  - component: {fileID: 8358498356989840529}
+  - component: {fileID: 231108838601706001}
+  - component: {fileID: 763309043901928114}
+  m_Layer: 3
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,7 +2002,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3460389138058326814}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1113,6 +2070,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &8358498356989840529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460389138058326814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 231108838601706001}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 763309043901928114}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &231108838601706001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460389138058326814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &763309043901928114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460389138058326814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3578843352557788762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +2149,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3006129720330160405}
-  m_Layer: 0
+  - component: {fileID: 5247955509214692500}
+  - component: {fileID: 1984779619884443769}
+  - component: {fileID: 566329159648419952}
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,6 +2175,52 @@ Transform:
   m_Father: {fileID: 7745370026283071416}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5247955509214692500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3578843352557788762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1984779619884443769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3578843352557788762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &566329159648419952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3578843352557788762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3593110891300567859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +2233,10 @@ GameObject:
   - component: {fileID: 1898351556542080280}
   - component: {fileID: 1898351556542080282}
   - component: {fileID: 1898351556542080281}
-  m_Layer: 0
+  - component: {fileID: 4792846988708858509}
+  - component: {fileID: 3424287463638800207}
+  - component: {fileID: 1293632255589238413}
+  m_Layer: 3
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,7 +2267,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593110891300567859}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1256,6 +2335,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4792846988708858509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593110891300567859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3424287463638800207}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1293632255589238413}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3424287463638800207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593110891300567859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1293632255589238413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593110891300567859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &3630264172833424602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +2414,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7126708925314744472}
-  m_Layer: 0
+  - component: {fileID: 6236642230347668518}
+  - component: {fileID: 5415361379255194088}
+  - component: {fileID: 8794244281787002032}
+  m_Layer: 3
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1287,6 +2439,52 @@ Transform:
   m_Father: {fileID: 5457913204886127734}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6236642230347668518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630264172833424602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5415361379255194088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630264172833424602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8794244281787002032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630264172833424602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &4449738882756686611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +2494,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4309388460846166506}
-  m_Layer: 0
+  - component: {fileID: 7666756227361726202}
+  - component: {fileID: 7900702283122818841}
+  - component: {fileID: 1450020996973368542}
+  m_Layer: 3
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,6 +2520,52 @@ Transform:
   m_Father: {fileID: 2255360920864874865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7666756227361726202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449738882756686611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7900702283122818841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449738882756686611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1450020996973368542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449738882756686611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &4609414354958851103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,7 +2575,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 283129074463100630}
-  m_Layer: 0
+  - component: {fileID: 2000866754973588055}
+  - component: {fileID: 1487223570617138360}
+  - component: {fileID: 5076634339350071847}
+  m_Layer: 3
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1352,6 +2602,52 @@ Transform:
   m_Father: {fileID: 4164442379215881398}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2000866754973588055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4609414354958851103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1487223570617138360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4609414354958851103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5076634339350071847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4609414354958851103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &4614213729679131163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,7 +2658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8142450421061430253}
   - component: {fileID: 893189625465088526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,7 +2746,10 @@ GameObject:
   - component: {fileID: 1898351557185042131}
   - component: {fileID: 1898351557185042133}
   - component: {fileID: 1898351557185042132}
-  m_Layer: 0
+  - component: {fileID: 7554062093651741837}
+  - component: {fileID: 631924748600318479}
+  - component: {fileID: 2944066879481782173}
+  m_Layer: 3
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +2780,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5724790284644091285}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1549,6 +2848,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7554062093651741837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724790284644091285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 631924748600318479}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2944066879481782173}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &631924748600318479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724790284644091285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &2944066879481782173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724790284644091285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &5844996188725683080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,7 +2927,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8026080405507581408}
-  m_Layer: 0
+  - component: {fileID: 6983721731488631528}
+  - component: {fileID: 590357740535230383}
+  - component: {fileID: 4132790952027777754}
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1581,6 +2953,52 @@ Transform:
   m_Father: {fileID: 283129074463100630}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6983721731488631528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844996188725683080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &590357740535230383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844996188725683080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4132790952027777754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844996188725683080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &6092640370740973507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +3008,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2255360920864874865}
-  m_Layer: 0
+  - component: {fileID: 2029295420515175832}
+  - component: {fileID: 5143696754200384579}
+  - component: {fileID: 5398491636607051897}
+  m_Layer: 3
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1615,6 +3036,52 @@ Transform:
   m_Father: {fileID: 790349554627793178}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029295420515175832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092640370740973507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5143696754200384579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092640370740973507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5398491636607051897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092640370740973507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &6451246689745296470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +3094,10 @@ GameObject:
   - component: {fileID: 1898351555689934601}
   - component: {fileID: 1898351555689934602}
   - component: {fileID: 1898351555689934600}
-  m_Layer: 0
+  - component: {fileID: 501517620443489206}
+  - component: {fileID: 3835075723619065131}
+  - component: {fileID: 6700991214924193045}
+  m_Layer: 3
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1658,7 +3128,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6451246689745296470}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1726,6 +3196,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &501517620443489206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451246689745296470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3835075723619065131}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6700991214924193045}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3835075723619065131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451246689745296470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6700991214924193045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451246689745296470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &6713751391662871049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,7 +3276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169213412413381696}
   - component: {fileID: 5087712507230709167}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1821,7 +3361,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3657427550128046341}
-  m_Layer: 0
+  - component: {fileID: 7234495004249543304}
+  - component: {fileID: 7211685104484753647}
+  - component: {fileID: 7196888532671515742}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1843,6 +3386,52 @@ Transform:
   m_Father: {fileID: 1443785693755354280}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7234495004249543304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843522540229159490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7211685104484753647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843522540229159490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7196888532671515742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843522540229159490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &6919557623346250909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +3444,10 @@ GameObject:
   - component: {fileID: 1898351556682246044}
   - component: {fileID: 1898351556682246046}
   - component: {fileID: 1898351556682246045}
-  m_Layer: 0
+  - component: {fileID: 8582182521937773694}
+  - component: {fileID: 3617906569278139218}
+  - component: {fileID: 1824865363066103954}
+  m_Layer: 3
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1886,7 +3478,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6919557623346250909}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1954,6 +3546,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &8582182521937773694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919557623346250909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3617906569278139218}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1824865363066103954}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3617906569278139218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919557623346250909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1824865363066103954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919557623346250909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &7038915851415506657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,7 +3628,10 @@ GameObject:
   - component: {fileID: 1898351555829488303}
   - component: {fileID: 1898351555829488288}
   - component: {fileID: 1898351555829488302}
-  m_Layer: 0
+  - component: {fileID: 9026356422182237590}
+  - component: {fileID: 6268640934567904999}
+  - component: {fileID: 1348447420484059114}
+  m_Layer: 3
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +3662,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7038915851415506657}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2065,6 +3730,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &9026356422182237590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038915851415506657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6268640934567904999}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1348447420484059114}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6268640934567904999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038915851415506657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1348447420484059114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038915851415506657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &7064950286670191665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,7 +3809,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8087840702274919766}
-  m_Layer: 0
+  - component: {fileID: 7301567824109477167}
+  - component: {fileID: 8816100058023326726}
+  - component: {fileID: 6842741182642036282}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2097,6 +3835,52 @@ Transform:
   m_Father: {fileID: 589839154364480242}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7301567824109477167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064950286670191665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8816100058023326726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064950286670191665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6842741182642036282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064950286670191665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &7357380316645797786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +3890,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7616284474792987011}
-  m_Layer: 0
+  - component: {fileID: 2183674475053792256}
+  - component: {fileID: 4245424804994239250}
+  - component: {fileID: 6306927220373662111}
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2129,6 +3916,52 @@ Transform:
   m_Father: {fileID: 8026080405507581408}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2183674475053792256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357380316645797786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4245424804994239250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357380316645797786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6306927220373662111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357380316645797786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &7454457681989360921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +3974,10 @@ GameObject:
   - component: {fileID: 1898351556415577146}
   - component: {fileID: 1898351556415577147}
   - component: {fileID: 1898351556415577145}
-  m_Layer: 0
+  - component: {fileID: 6276394366786238916}
+  - component: {fileID: 4015523225108901671}
+  - component: {fileID: 4700344441056058053}
+  m_Layer: 3
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2172,7 +4008,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7454457681989360921}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 0.75
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2239,6 +4075,76 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &6276394366786238916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454457681989360921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4015523225108901671}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4700344441056058053}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4015523225108901671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454457681989360921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4700344441056058053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454457681989360921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &7968229357800681723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +4155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6092541693985599783}
   - component: {fileID: 8349215315346313082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2334,7 +4240,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308715454616573794}
-  m_Layer: 0
+  - component: {fileID: 2048950716780715446}
+  - component: {fileID: 1228879734943638103}
+  - component: {fileID: 4886621653106640528}
+  m_Layer: 3
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2357,6 +4266,52 @@ Transform:
   m_Father: {fileID: 6222452297058271172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2048950716780715446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055379477121120653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1228879734943638103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055379477121120653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4886621653106640528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055379477121120653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &8192886729093444851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,7 +4321,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6653642708081687880}
-  m_Layer: 0
+  - component: {fileID: 236215343731083682}
+  - component: {fileID: 6527115479522847902}
+  - component: {fileID: 7937768836144396680}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2389,6 +4347,52 @@ Transform:
   m_Father: {fileID: 4639878017760109789}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &236215343731083682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192886729093444851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6527115479522847902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192886729093444851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7937768836144396680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192886729093444851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &8215770014117509471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,7 +4402,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468493861257823334}
-  m_Layer: 0
+  - component: {fileID: 3191841137834406628}
+  - component: {fileID: 5107293261050483586}
+  - component: {fileID: 7203413967938040170}
+  m_Layer: 3
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,6 +4427,52 @@ Transform:
   m_Father: {fileID: 4887761939385778608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3191841137834406628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215770014117509471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5107293261050483586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215770014117509471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7203413967938040170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215770014117509471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &8434678519831321661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,7 +4482,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8501710569455077140}
-  m_Layer: 0
+  - component: {fileID: 3462138798971962878}
+  - component: {fileID: 6552343856774788181}
+  - component: {fileID: 1992428205013090503}
+  m_Layer: 3
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2451,6 +4507,52 @@ Transform:
   m_Father: {fileID: 3612433433817360310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3462138798971962878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434678519831321661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6552343856774788181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434678519831321661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1992428205013090503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434678519831321661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &8590589756369413699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,7 +4563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1346920846804369732}
   - component: {fileID: 179676357307923006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2561,7 +4663,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4233626727420587823}
-  m_Layer: 0
+  - component: {fileID: 3326667495325207452}
+  - component: {fileID: 2797494055464923263}
+  - component: {fileID: 8205088449164878560}
+  m_Layer: 3
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2584,6 +4689,52 @@ Transform:
   m_Father: {fileID: 8747941198521309123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3326667495325207452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739532479737804202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2797494055464923263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739532479737804202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8205088449164878560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739532479737804202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &8964443600157955262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +4744,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4218871573148455108}
-  m_Layer: 0
+  - component: {fileID: 294514224052077270}
+  - component: {fileID: 2699815933324166839}
+  - component: {fileID: 7122828774734818013}
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2616,6 +4770,52 @@ Transform:
   m_Father: {fileID: 6653642708081687880}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294514224052077270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964443600157955262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2699815933324166839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964443600157955262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7122828774734818013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964443600157955262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0
 --- !u!1 &9015948286931104378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,7 +4828,10 @@ GameObject:
   - component: {fileID: 1898351555448350111}
   - component: {fileID: 1898351555448350096}
   - component: {fileID: 1898351555448350110}
-  m_Layer: 0
+  - component: {fileID: 7953134493655474046}
+  - component: {fileID: 2261039450031674685}
+  - component: {fileID: 1606748341142219441}
+  m_Layer: 3
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2659,7 +4862,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9015948286931104378}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2726,3 +4929,73 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7953134493655474046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015948286931104378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2261039450031674685}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1606748341142219441}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2261039450031674685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015948286931104378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1606748341142219441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015948286931104378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  directionForce: {x: 0, y: 10, z: 0}
+  soundName: 
+  randomSound: 0

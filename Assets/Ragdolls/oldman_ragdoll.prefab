@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 508575745095053774}
   - component: {fileID: 7723528391684124062}
   - component: {fileID: 7463291051497311940}
+  - component: {fileID: 707031618349125739}
   m_Layer: 3
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
@@ -46,7 +47,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7463291051497311940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +86,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &707031618349125739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72184017169330999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &231718657393859643
@@ -73,6 +116,7 @@ GameObject:
   - component: {fileID: 4552355750920802034}
   - component: {fileID: 354052173183112255}
   - component: {fileID: 7004229810868465519}
+  - component: {fileID: 4935934555004503585}
   m_Layer: 3
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -108,7 +152,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7004229810868465519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +191,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4935934555004503585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231718657393859643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &920162165639623482
@@ -138,6 +224,7 @@ GameObject:
   - component: {fileID: 5018761648144127972}
   - component: {fileID: 2727816104187658581}
   - component: {fileID: 2458457187707894198}
+  - component: {fileID: 6604570506846456963}
   m_Layer: 3
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
@@ -183,7 +270,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920162165639623482}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -249,7 +336,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2458457187707894198}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6604570506846456963}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2458457187707894198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +375,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6604570506846456963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920162165639623482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &945083409572346647
@@ -279,6 +408,7 @@ GameObject:
   - component: {fileID: 368436779310157631}
   - component: {fileID: 1603154485152931468}
   - component: {fileID: 4421635703111202349}
+  - component: {fileID: 7712219290047202805}
   m_Layer: 3
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
@@ -324,7 +454,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945083409572346647}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -390,7 +520,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4421635703111202349}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7712219290047202805}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4421635703111202349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +559,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7712219290047202805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945083409572346647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &966668745849937534
@@ -417,6 +589,7 @@ GameObject:
   - component: {fileID: 1546770996531562801}
   - component: {fileID: 561005411809366681}
   - component: {fileID: 7083500447058199121}
+  - component: {fileID: 540008031448751921}
   m_Layer: 3
   m_Name: mixamorig:RightHandIndex2
   m_TagString: Untagged
@@ -452,7 +625,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7083500447058199121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +664,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &540008031448751921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966668745849937534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1054296466852562174
@@ -479,6 +694,7 @@ GameObject:
   - component: {fileID: 6784671778630254780}
   - component: {fileID: 928392190052899624}
   - component: {fileID: 2663501850991287858}
+  - component: {fileID: 6286294837132657549}
   m_Layer: 3
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
@@ -513,7 +729,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2663501850991287858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +768,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &6286294837132657549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054296466852562174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1177117873675101297
@@ -543,6 +801,7 @@ GameObject:
   - component: {fileID: 4634164225200000960}
   - component: {fileID: 1091490606544931211}
   - component: {fileID: 5503976487764415826}
+  - component: {fileID: 7540415462180311710}
   m_Layer: 3
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
@@ -588,7 +847,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177117873675101297}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -608,7 +867,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.00000004109461, y: 0.842689, z: -0.00000023841858}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -654,7 +913,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5503976487764415826}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7540415462180311710}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5503976487764415826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,7 +952,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7540415462180311710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177117873675101297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1260974038741189698
@@ -681,6 +982,7 @@ GameObject:
   - component: {fileID: 9004083316302048552}
   - component: {fileID: 7536889671912695357}
   - component: {fileID: 467457996137277670}
+  - component: {fileID: 3357463532698695341}
   m_Layer: 3
   m_Name: mixamorig:Neck
   m_TagString: Untagged
@@ -716,7 +1018,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &467457996137277670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,7 +1057,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &3357463532698695341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260974038741189698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1278477747996740134
@@ -743,6 +1087,7 @@ GameObject:
   - component: {fileID: 3080913058198951332}
   - component: {fileID: 453649956924817086}
   - component: {fileID: 7096593435362241769}
+  - component: {fileID: 3509708422175084965}
   m_Layer: 3
   m_Name: mixamorig:LeftHandIndex4
   m_TagString: Untagged
@@ -777,7 +1122,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7096593435362241769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,7 +1161,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &3509708422175084965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278477747996740134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1461977668410888621
@@ -804,6 +1191,7 @@ GameObject:
   - component: {fileID: 1072180081705592722}
   - component: {fileID: 496365895357978294}
   - component: {fileID: 6005277967893716952}
+  - component: {fileID: 2360217754935480961}
   m_Layer: 3
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
@@ -839,7 +1227,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6005277967893716952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,7 +1266,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &2360217754935480961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461977668410888621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1491052437176582963
@@ -866,6 +1296,7 @@ GameObject:
   - component: {fileID: 5230178491974602983}
   - component: {fileID: 2072119694779875385}
   - component: {fileID: 7921279318475421044}
+  - component: {fileID: 5440793025599827960}
   m_Layer: 3
   m_Name: mixamorig:RightHandIndex4
   m_TagString: Untagged
@@ -900,7 +1331,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7921279318475421044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,7 +1370,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5440793025599827960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491052437176582963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1799709838989998326
@@ -927,6 +1400,7 @@ GameObject:
   - component: {fileID: 8981584423545611513}
   - component: {fileID: 8851474479078156174}
   - component: {fileID: 1678732101675945879}
+  - component: {fileID: 1537581820863150585}
   m_Layer: 3
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -942,7 +1416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799709838989998326}
   m_LocalRotation: {x: -0.00000023636726, y: -0.5767398, z: -0.00000027912037, w: 0.8169279}
-  m_LocalPosition: {x: 8.6205215e-10, y: 1.0943499, z: -0.000000002383798}
+  m_LocalPosition: {x: 0, y: 1.0943499, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -962,7 +1436,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1678732101675945879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +1475,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1537581820863150585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799709838989998326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1853559460548538087
@@ -989,6 +1505,7 @@ GameObject:
   - component: {fileID: 3814356053011790550}
   - component: {fileID: 2224815866180646264}
   - component: {fileID: 2136170086579868611}
+  - component: {fileID: 5382088541313938665}
   m_Layer: 3
   m_Name: mixamorig:LeftHandIndex1
   m_TagString: Untagged
@@ -1024,7 +1541,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2136170086579868611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,7 +1580,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5382088541313938665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853559460548538087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &1962450297853510551
@@ -1051,6 +1610,7 @@ GameObject:
   - component: {fileID: 6928194889638656632}
   - component: {fileID: 7923153434092257889}
   - component: {fileID: 9021193005022695239}
+  - component: {fileID: 5034052701809866774}
   m_Layer: 3
   m_Name: mixamorig:RightHandIndex3
   m_TagString: Untagged
@@ -1086,7 +1646,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9021193005022695239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1685,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5034052701809866774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962450297853510551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &2632276871582446460
@@ -1116,6 +1718,7 @@ GameObject:
   - component: {fileID: 8492981212712627773}
   - component: {fileID: 2477904180497549062}
   - component: {fileID: 7596175857896445283}
+  - component: {fileID: 2196809803064048841}
   m_Layer: 3
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
@@ -1161,7 +1764,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2632276871582446460}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1227,7 +1830,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7596175857896445283}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2196809803064048841}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7596175857896445283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,7 +1869,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &2196809803064048841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2632276871582446460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &2789996139026677699
@@ -1254,6 +1899,7 @@ GameObject:
   - component: {fileID: 4946139293009545383}
   - component: {fileID: 6539967363580802197}
   - component: {fileID: 6326663899790351953}
+  - component: {fileID: 1220334594600143582}
   m_Layer: 3
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
@@ -1289,7 +1935,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6326663899790351953}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1220334594600143582}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6326663899790351953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1974,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &1220334594600143582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789996139026677699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &2998723597386673968
@@ -1318,6 +2006,7 @@ GameObject:
   - component: {fileID: 7872978330550515274}
   - component: {fileID: 36108632324964740}
   - component: {fileID: 7679000070605800753}
+  - component: {fileID: 4559114828468062645}
   m_Layer: 3
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -1364,7 +2053,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2998723597386673968}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1384,7 +2073,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7679000070605800753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,7 +2112,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4559114828468062645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998723597386673968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &3051736802780089451
@@ -1424,7 +2155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3051736802780089451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1646,6 +2377,7 @@ GameObject:
   - component: {fileID: 7578020794509673942}
   - component: {fileID: 997250320886717704}
   - component: {fileID: 2385813375901315451}
+  - component: {fileID: 4929752399342982758}
   m_Layer: 3
   m_Name: mixamorig:Spine
   m_TagString: Untagged
@@ -1681,7 +2413,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2385813375901315451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,7 +2452,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4929752399342982758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3684494573321346433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &3750912321414743767
@@ -1708,6 +2482,7 @@ GameObject:
   - component: {fileID: 9156951215272198548}
   - component: {fileID: 1527290640156857828}
   - component: {fileID: 2861502126304726092}
+  - component: {fileID: 4793102723640113039}
   m_Layer: 3
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
@@ -1743,7 +2518,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2861502126304726092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,7 +2557,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4793102723640113039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750912321414743767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &3926130817644895246
@@ -1770,6 +2587,7 @@ GameObject:
   - component: {fileID: 4649834548699524865}
   - component: {fileID: 6042036420380732778}
   - component: {fileID: 3494543937572136565}
+  - component: {fileID: 858985328558495730}
   m_Layer: 3
   m_Name: mixamorig:LeftHandIndex3
   m_TagString: Untagged
@@ -1805,7 +2623,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3494543937572136565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +2662,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &858985328558495730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3926130817644895246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &4558140439073911637
@@ -1832,6 +2692,7 @@ GameObject:
   - component: {fileID: 6322422806725097372}
   - component: {fileID: 5374779155633042197}
   - component: {fileID: 7998213095633159320}
+  - component: {fileID: 8855947365338110685}
   m_Layer: 3
   m_Name: mixamorig:RightHandIndex1
   m_TagString: Untagged
@@ -1867,7 +2728,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7998213095633159320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,7 +2767,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8855947365338110685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558140439073911637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &4746726085829587550
@@ -1897,6 +2800,7 @@ GameObject:
   - component: {fileID: 8610513255703823443}
   - component: {fileID: 3367297082759592892}
   - component: {fileID: 2018637379092153997}
+  - component: {fileID: 5413165453412495859}
   m_Layer: 3
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -1941,7 +2845,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4746726085829587550}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1961,7 +2865,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -5.744851e-12, y: 1.1196421, z: 0.03678213}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2007,7 +2911,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2018637379092153997}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5413165453412495859}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2018637379092153997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2020,7 +2950,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &5413165453412495859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746726085829587550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &5010775167595492750
@@ -2034,6 +2980,7 @@ GameObject:
   - component: {fileID: 432356666376384267}
   - component: {fileID: 2595146087424036015}
   - component: {fileID: 3721002078424133163}
+  - component: {fileID: 8878948524135885916}
   m_Layer: 3
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
@@ -2069,7 +3016,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3721002078424133163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2082,7 +3055,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8878948524135885916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5010775167595492750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &5317951161281272857
@@ -2096,6 +3085,7 @@ GameObject:
   - component: {fileID: 5277360813759252272}
   - component: {fileID: 5479536606702060417}
   - component: {fileID: 8496787582366247237}
+  - component: {fileID: 4325181581014412003}
   m_Layer: 3
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
@@ -2130,7 +3120,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8496787582366247237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,7 +3159,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4325181581014412003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5317951161281272857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &5473897564881299047
@@ -2248,6 +3280,7 @@ GameObject:
   - component: {fileID: 2198052513866007618}
   - component: {fileID: 8183414582975851613}
   - component: {fileID: 5538100888931164780}
+  - component: {fileID: 532033576603524804}
   m_Layer: 3
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
@@ -2282,7 +3315,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5538100888931164780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,7 +3354,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &532033576603524804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5675820067089398139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &5983775372890913193
@@ -2309,6 +3384,7 @@ GameObject:
   - component: {fileID: 3380420799950100294}
   - component: {fileID: 2585371737852116366}
   - component: {fileID: 8143115057673330391}
+  - component: {fileID: 8712764236680218350}
   m_Layer: 3
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
@@ -2344,7 +3420,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8143115057673330391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2357,7 +3459,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8712764236680218350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5983775372890913193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &6607724924260474173
@@ -2374,6 +3492,7 @@ GameObject:
   - component: {fileID: 6607724924260474115}
   - component: {fileID: 993669036404492106}
   - component: {fileID: 5947302935732253271}
+  - component: {fileID: 4355299741933710677}
   m_Layer: 3
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
@@ -2418,7 +3537,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6607724924260474173}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 0.75
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2438,7 +3557,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000028812774, y: 0.74337316, z: 0.01114854}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2484,7 +3603,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5947302935732253271}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4355299741933710677}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5947302935732253271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,7 +3642,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &4355299741933710677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6607724924260474173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &6685562809943868601
@@ -2514,6 +3675,7 @@ GameObject:
   - component: {fileID: 8558303137710596608}
   - component: {fileID: 5546197660496249209}
   - component: {fileID: 7982229581425627879}
+  - component: {fileID: 9061889736713559624}
   m_Layer: 3
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
@@ -2559,7 +3721,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6685562809943868601}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2579,7 +3741,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.8643555, y: 0.74121165, z: 0.0013538413}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -2625,7 +3787,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7982229581425627879}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9061889736713559624}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7982229581425627879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2638,7 +3826,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &9061889736713559624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6685562809943868601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &6732766712722017989
@@ -2655,6 +3859,7 @@ GameObject:
   - component: {fileID: 6732766712722017994}
   - component: {fileID: 973675948227914020}
   - component: {fileID: 8950623926080479432}
+  - component: {fileID: 414568042827036908}
   m_Layer: 3
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
@@ -2701,7 +3906,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6732766712722017989}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2721,7 +3926,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000023748726, y: 0.84270096, z: -0.00000023841858}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -2767,7 +3972,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8950623926080479432}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 414568042827036908}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8950623926080479432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2780,7 +4011,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &414568042827036908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6732766712722017989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &6830669608973196309
@@ -2794,6 +4041,7 @@ GameObject:
   - component: {fileID: 5547624742286581106}
   - component: {fileID: 7983351577471060598}
   - component: {fileID: 4700671040726307055}
+  - component: {fileID: 7454829592217401250}
   m_Layer: 3
   m_Name: mixamorig:LeftHandIndex2
   m_TagString: Untagged
@@ -2829,7 +4077,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4700671040726307055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,7 +4116,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7454829592217401250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830669608973196309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &7298005835749055602
@@ -2859,6 +4149,7 @@ GameObject:
   - component: {fileID: 7298005835749055603}
   - component: {fileID: 3593607477962766484}
   - component: {fileID: 3231549049076958280}
+  - component: {fileID: 7876447476887232236}
   m_Layer: 3
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
@@ -2904,7 +4195,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7298005835749055602}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2924,7 +4215,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000055879354, y: 1.130124, z: 0.000000003259629}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2970,7 +4261,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3231549049076958280}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7876447476887232236}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3231549049076958280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,7 +4300,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &7876447476887232236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7298005835749055602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &7515873532041646055
@@ -2997,6 +4330,7 @@ GameObject:
   - component: {fileID: 2561547382819971413}
   - component: {fileID: 7589257169883403664}
   - component: {fileID: 5101591920418090393}
+  - component: {fileID: 3697668132183995769}
   m_Layer: 3
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
@@ -3034,7 +4368,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7679000070605800753}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4559114828468062645}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5101591920418090393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,7 +4407,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &3697668132183995769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515873532041646055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
 --- !u!1 &8336828551910360497
@@ -3064,6 +4440,7 @@ GameObject:
   - component: {fileID: 8336828551910360503}
   - component: {fileID: 2415065836975080308}
   - component: {fileID: 66779632113703557}
+  - component: {fileID: 8090419076376500736}
   m_Layer: 3
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
@@ -3109,7 +4486,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8336828551910360497}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3129,7 +4506,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.29047424, y: -0.19101803, z: 0.023097984}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -3175,7 +4552,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 66779632113703557}
+        m_TargetAssemblyTypeName: directionalPoke, Assembly-CSharp
+        m_MethodName: DirectionalPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8090419076376500736}
+        m_TargetAssemblyTypeName: specificDirectionPoke, Assembly-CSharp
+        m_MethodName: directionPoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &66779632113703557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3188,6 +4591,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d96d4f9a38c547afb9b93dbedf51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
+  soundName: 
+  randomSound: 0
+--- !u!114 &8090419076376500736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336828551910360497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6ef74b402af044a869d21e44c2f991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   force: 10
+  directionForce: {x: 0, y: 0, z: 0}
   soundName: 
   randomSound: 0
