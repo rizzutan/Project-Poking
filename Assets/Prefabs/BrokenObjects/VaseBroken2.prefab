@@ -1350,18 +1350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioObjects:
-  - {fileID: 11400000, guid: c96beda7c97fbab4695775af0fdd21f7, type: 2}
-  - {fileID: 11400000, guid: 73720dea0d3eab14ea39bad458f00b34, type: 2}
-  - {fileID: 11400000, guid: 4bb6aeccb5b24bf4db830b42d9e25205, type: 2}
-  - {fileID: 11400000, guid: f85fe777b0f24dc4e916bd9a37751c93, type: 2}
-  - {fileID: 11400000, guid: 23a5a7c722bf9044c98bfc6e81d3ab12, type: 2}
-  - {fileID: 11400000, guid: 4e746b7a7eb87a749a0fb83c88b9e788, type: 2}
-  - {fileID: 11400000, guid: d0fcb9f12ff76274a9607b3a874ea16f, type: 2}
-  - {fileID: 11400000, guid: fad2682b324bb384a80f945816d97ab7, type: 2}
-  - {fileID: 11400000, guid: 86ef2e473dcb92b4082015d5fc812376, type: 2}
-  - {fileID: 11400000, guid: 0e4acd24479378a4391644145aba4065, type: 2}
-  - {fileID: 11400000, guid: 773cd641ef429544d95ab887f5b90bbf, type: 2}
-  - {fileID: 11400000, guid: 1cd61f2f112a87a4db8088c561e1b372, type: 2}
+  - {fileID: 11400000, guid: 6def55fda06686d489b842fb17507dcc, type: 2}
+  - {fileID: 11400000, guid: d5ac3c4c60074cc479838dd518ba0502, type: 2}
+  - {fileID: 11400000, guid: 6c70d13947a0d3f4e8a916d798882678, type: 2}
 --- !u!114 &4108726876545925468
 MonoBehaviour:
   m_ObjectHideFlags: 0
