@@ -7,18 +7,20 @@ public class directionalPoke : MonoBehaviour
     public float force = 10f;
     private Transform cameraPos;
     private Rigidbody rb;
-
-    AudioController ac;
     [SerializeField] string soundName;
     [SerializeField] bool randomSound;
+
+    [SerializeField] AudioController ac;
 
     // Start is called before the first frame update
     void Start()
     {
         GameObject camera = GameObject.FindWithTag("MainCamera");
         cameraPos = camera.GetComponent<Transform>();
-
-        ac = GetComponent<AudioController>();
+        if (ac == null)
+        {
+            ac = GetComponent<AudioController>();
+        }
         rb = GetComponent<Rigidbody>();
     }
 

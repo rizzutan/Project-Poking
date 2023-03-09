@@ -103,8 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &231718657393859643
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,8 +209,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &920162165639623482
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,8 +394,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &945083409572346647
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,8 +579,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &966668745849937534
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,8 +685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1054296466852562174
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +790,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1177117873675101297
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,8 +975,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1260974038741189698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,8 +1081,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1278477747996740134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,8 +1186,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1461977668410888621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,8 +1292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1491052437176582963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,8 +1397,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1799709838989998326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,8 +1503,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1853559460548538087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,8 +1609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &1962450297853510551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,8 +1715,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &2632276871582446460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,8 +1900,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &2789996139026677699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,8 +2006,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &2998723597386673968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,8 +2145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &3051736802780089451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2157,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2383005466474174161}
+  - component: {fileID: 5525195501296811493}
+  - component: {fileID: 344290956886503837}
   m_Layer: 0
   m_Name: oldman_ragdoll
   m_TagString: Untagged
@@ -2166,6 +2185,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5525195501296811493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051736802780089451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0e2d9111ddb5d4795f886f7eaa7819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObjects:
+  - {fileID: 11400000, guid: c96beda7c97fbab4695775af0fdd21f7, type: 2}
+  - {fileID: 11400000, guid: 73720dea0d3eab14ea39bad458f00b34, type: 2}
+  - {fileID: 11400000, guid: 4bb6aeccb5b24bf4db830b42d9e25205, type: 2}
+  - {fileID: 11400000, guid: f85fe777b0f24dc4e916bd9a37751c93, type: 2}
+  - {fileID: 11400000, guid: 23a5a7c722bf9044c98bfc6e81d3ab12, type: 2}
+  - {fileID: 11400000, guid: 4e746b7a7eb87a749a0fb83c88b9e788, type: 2}
+  - {fileID: 11400000, guid: d0fcb9f12ff76274a9607b3a874ea16f, type: 2}
+  - {fileID: 11400000, guid: fad2682b324bb384a80f945816d97ab7, type: 2}
+  - {fileID: 11400000, guid: 86ef2e473dcb92b4082015d5fc812376, type: 2}
+  - {fileID: 11400000, guid: 0e4acd24479378a4391644145aba4065, type: 2}
+  - {fileID: 11400000, guid: 773cd641ef429544d95ab887f5b90bbf, type: 2}
+  - {fileID: 11400000, guid: 1cd61f2f112a87a4db8088c561e1b372, type: 2}
+  - {fileID: 11400000, guid: bf91be388c4f23b44a0ff0eca481c4c8, type: 2}
+  - {fileID: 11400000, guid: afc116df885ed8f4faea7d6d70d365a3, type: 2}
+  - {fileID: 11400000, guid: a9c0589241f0d324294252805f5d9a55, type: 2}
+  - {fileID: 11400000, guid: d61f3002921f934469d7f6d78e9b53d9, type: 2}
+  - {fileID: 11400000, guid: 26df456afce90554986cb61122346c44, type: 2}
+  - {fileID: 11400000, guid: fe7e665df949dab4f804a9465b030c42, type: 2}
+  - {fileID: 11400000, guid: 702bef1350b773d4faf0d0335c278520, type: 2}
+  - {fileID: 11400000, guid: 555e8f69210cdd8449019a06af466dcf, type: 2}
+  - {fileID: 11400000, guid: e0db689105fd40744a76157de76bcc26, type: 2}
+  - {fileID: 11400000, guid: c1504b1971878774399e544caa530575, type: 2}
+  - {fileID: 11400000, guid: 6466a8d806edce6418a76da0b7161061, type: 2}
+  - {fileID: 11400000, guid: ae8d5b5da2f5f28409307218385d3188, type: 2}
+  - {fileID: 11400000, guid: 456ce0ad0d0dbe04ca2443870aa9be46, type: 2}
+  - {fileID: 11400000, guid: eb2975ff2e74f52459cb8f820893ec8e, type: 2}
+  - {fileID: 11400000, guid: d74df9becc68cc841b4e95633994f3b3, type: 2}
+  - {fileID: 11400000, guid: ffa3ad56288db5447801fc43a4ee7d4f, type: 2}
+  - {fileID: 11400000, guid: 9411a718f67e0ae459d1a05e582fa1bf, type: 2}
+  - {fileID: 11400000, guid: 9bdc5526a5ba3c24a97bda7852491169, type: 2}
+  - {fileID: 11400000, guid: f55b2f6a5ecfc374bb5a2bc55f58c1ff, type: 2}
+  - {fileID: 11400000, guid: dfbe18fdab319ee448adf23f31df0d07, type: 2}
+--- !u!114 &344290956886503837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051736802780089451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c369c8e20dd8f4d9d652143d31965a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: 
+  randomSound: 1
 --- !u!1 &3248494090181837662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,8 +2547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &3750912321414743767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,8 +2653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &3926130817644895246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,8 +2759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &4558140439073911637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,8 +2865,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &4746726085829587550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,8 +3049,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &5010775167595492750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,8 +3155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &5317951161281272857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,8 +3260,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &5473897564881299047
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,8 +3456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &5983775372890913193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3476,8 +3562,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &6607724924260474173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,8 +3746,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &6685562809943868601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,8 +3931,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &6732766712722017989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,8 +4117,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &6830669608973196309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,8 +4223,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &7298005835749055602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,8 +4408,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &7515873532041646055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,8 +4516,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
 --- !u!1 &8336828551910360497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,5 +4701,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 0, z: 0}
+  ac: {fileID: 5525195501296811493}
   soundName: 
-  randomSound: 0
+  randomSound: 1
