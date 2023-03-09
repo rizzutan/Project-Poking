@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class activateRBPoke : MonoBehaviour
 {
-    private Poke poke;
     private Rigidbody rb;
     AudioController ac;
     [SerializeField] string soundName;
@@ -13,25 +12,15 @@ public class activateRBPoke : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        poke = GetComponent<Poke>();
         rb = GetComponent<Rigidbody>();
         ac = GetComponent<AudioController>();
         rb.isKinematic = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ActivateRBPoke()
     {
-            if (poke.poked == true)
-        {
-            print("poked!");
-            rb.isKinematic = false;
-            TryPlaySound();
-        }
-    }
-    private void LateUpdate()
-    {
-        poke.poked = false;
+        rb.isKinematic = false;
+        TryPlaySound();
     }
 
     void TryPlaySound()
@@ -51,4 +40,3 @@ public class activateRBPoke : MonoBehaviour
         }
     }
 }
-

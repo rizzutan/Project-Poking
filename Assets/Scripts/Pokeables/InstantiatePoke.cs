@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class InstantiatePoke : MonoBehaviour
 {
-    public bool cooldown = false;
-    private float timerDuration = 1f;
-    private float elapsedTime = 0f;
-    private Poke poke;
-    private Rigidbody rb;
     public Vector3 offset;
     public GameObject spawnObject;
 
@@ -18,33 +13,15 @@ public class InstantiatePoke : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        poke = GetComponent<Poke>();
-
         ac = GetComponent<AudioController>();
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void instantiatePoke()
     {
-        elapsedTime += Time.deltaTime;
-        if (elapsedTime >= timerDuration)
-        {
-            cooldown = false;
-        }
-        if (poke.poked == true && cooldown == false)
-        {
-            cooldown = true;
-            elapsedTime = 0;
-            GameObject newObject = Instantiate(spawnObject, Vector3.zero, Quaternion.identity);
-            newObject.transform.position = transform.position + offset;
-            TryPlaySound();
-        }
-    }
-
-    private void LateUpdate()
-    {
-        poke.poked = false;
+        GameObject newObject = Instantiate(spawnObject, Vector3.zero, Quaternion.identity);
+        newObject.transform.position = transform.position + offset;
+        TryPlaySound();
     }
 
     void TryPlaySound()
@@ -67,4 +44,3 @@ public class InstantiatePoke : MonoBehaviour
     }
 
 }
-
