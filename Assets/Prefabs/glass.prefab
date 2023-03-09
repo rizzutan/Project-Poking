@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4931343922541225748}
   - component: {fileID: 1470731912155666012}
   - component: {fileID: 446182313966898918}
+  - component: {fileID: 1098965367657060565}
   m_Layer: 3
   m_Name: glass
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427890823400235234}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 266.4881, y: 6.4972095, z: 266.48804}
   m_ConstrainProportionsScale: 0
@@ -64,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: b8199c7e052bf41999313735a66c63eb, type: 3}
+  - {fileID: 2100000, guid: 762e56ea8afe4f34a9237c2e07772d66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,3 +142,19 @@ MonoBehaviour:
   maxPokeCount: 0
   objectSwap: {fileID: 3804179407136445040, guid: af310f6d7d4ed466ab71c7c69c4dfece,
     type: 3}
+  soundName: GlassBreak
+  randomSound: 0
+--- !u!114 &1098965367657060565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427890823400235234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0e2d9111ddb5d4795f886f7eaa7819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObjects:
+  - {fileID: 11400000, guid: 1ef448c4cf8ff2443bf47b59533627b2, type: 2}
