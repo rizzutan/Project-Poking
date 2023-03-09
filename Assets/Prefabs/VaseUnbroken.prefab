@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2ed4ed05c2f9448bcf0b9b57310fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0
-  maxPokeCount: 1
+  maxPokeCount: 0
   objectSwap: {fileID: 8021171884576382754, guid: 0636d5d9d67861c4ca5cb8664dfc622a,
     type: 3}
 --- !u!114 &8173540791527693532
@@ -115,7 +114,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2833ab52db7a458c45dc2b7c6d7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poked: 0
+  OnPoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8173540791527693533}
+        m_TargetAssemblyTypeName: SwapStatePoke, Assembly-CSharp
+        m_MethodName: swapPokeState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &8173540791527693523
 BoxCollider:
   m_ObjectHideFlags: 0

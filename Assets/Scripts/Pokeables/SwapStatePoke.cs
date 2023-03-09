@@ -4,34 +4,14 @@ using UnityEngine;
 
 public class SwapStatePoke : MonoBehaviour
 {
-    public bool cooldown = false;
-    private float timerDuration = 1f;
-    private float elapsedTime = 0f;
     private float pokeCount = 0f;
-    private Poke poke;
     [SerializeField] int maxPokeCount;
     [SerializeField] GameObject objectSwap;
-    // Start is called before the first frame update
-    void Start()
-    {
-        poke = GetComponent<Poke>();
 
-    }
-
-    // Update is called once per frame
-    void Update()
+    public void swapPokeState()
     {
-        elapsedTime += Time.deltaTime;
-        if (elapsedTime >= timerDuration)
-        {
-            cooldown = false;
-        }
-        if (poke.poked == true && cooldown == false)
-        {
-            pokeCount += 1;
-            cooldown = true;
-            elapsedTime = 0;
-        }
+        pokeCount += 1;
+
         if (pokeCount >= maxPokeCount)
         {
             GameObject newGameObject = Instantiate(objectSwap, transform.position, Quaternion.identity);
@@ -39,11 +19,4 @@ public class SwapStatePoke : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void LateUpdate()
-    {
-        poke.poked = false;
-    }
-
 }
-
