@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 4523222485770251815}
   - component: {fileID: 4523222485770251992}
   - component: {fileID: 2977092504207074375}
+  - component: {fileID: 5688667447669888124}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -254,14 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462cd6486d3179a42a41ad72735ba73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHanded: 0
-  speed: 10
   range: 3
   radius: 1
-  minSpeed: 3
-  minDistance: 0.7
-  maxDistance: 1.2
-  restPos: {fileID: 5300074425747727077}
   anim: {fileID: 2977092504207074375}
 --- !u!95 &2977092504207074375
 Animator:
@@ -283,6 +278,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5688667447669888124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523222485770251814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0e2d9111ddb5d4795f886f7eaa7819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObjects:
+  - {fileID: 11400000, guid: c7db2890b7343114d8b832e300b5f122, type: 2}
 --- !u!1 &5300074425747727076
 GameObject:
   m_ObjectHideFlags: 0
