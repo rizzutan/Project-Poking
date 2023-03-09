@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class pipeTeleporter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private LayerMask playerMask;
+    private LayerMask pokeMask;
 
-    // Update is called once per frame
-    void Update()
+    public Transform teleport;
+    private void Start()
     {
-        
+        playerMask = LayerMask.GetMask("Player");
+        pokeMask = LayerMask.GetMask("Poke");
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == playerMask || other.gameObject.layer == pokeMask)
+        {
+            other.transform.position = teleport.position;
+        }
     }
 }
