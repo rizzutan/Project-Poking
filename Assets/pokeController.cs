@@ -68,7 +68,7 @@ public class pokeController : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range, layerMask))
         {
             Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
             for (int i = 0; i < colliderArray.Length; i++)
