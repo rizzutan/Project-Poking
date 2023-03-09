@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 4523222485770251810}
   - component: {fileID: 4523222485770251815}
   - component: {fileID: 4523222485770251992}
+  - component: {fileID: 2977092504207074375}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -261,6 +262,27 @@ MonoBehaviour:
   minDistance: 0.7
   maxDistance: 1.2
   restPos: {fileID: 5300074425747727077}
+  anim: {fileID: 2977092504207074375}
+--- !u!95 &2977092504207074375
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523222485770251814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9abec03ade194064b85d123a3f716bdd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5300074425747727076
 GameObject:
   m_ObjectHideFlags: 0

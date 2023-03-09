@@ -16,6 +16,8 @@ public class pokeController : MonoBehaviour
     private Vector3 lastMousePosition;
     private LayerMask layerMask;
     private bool poke = false;
+
+    [SerializeField] Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +32,9 @@ public class pokeController : MonoBehaviour
         }
         if (leftHanded == true)
         {
-            restPos.position = new Vector3(-restPos.position.x, restPos.position.y, restPos.position.z);
+            //restPos.position = new Vector3(-restPos.position.x, restPos.position.y, restPos.position.z);
         }
-        stick.position = restPos.position;
+        //stick.position = restPos.position;
         layerMask = LayerMask.GetMask("Poke");
     }
 
@@ -40,9 +42,9 @@ public class pokeController : MonoBehaviour
     void Update()
     {
         //calculate mouse speed
-        Vector3 currentMousePosition = Input.mousePosition;
-        float mouseSpeed = (currentMousePosition - lastMousePosition).magnitude / Time.deltaTime;
-        lastMousePosition = currentMousePosition;
+        //Vector3 currentMousePosition = Input.mousePosition;
+        //float mouseSpeed = (currentMousePosition - lastMousePosition).magnitude / Time.deltaTime;
+        //lastMousePosition = currentMousePosition;
 
         if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -52,11 +54,13 @@ public class pokeController : MonoBehaviour
             //stick.localPosition = new Vector3(stick.localPosition.x, stick.localPosition.y, Mathf.Clamp(stick.localPosition.z + (horMovement * speed * Time.deltaTime), restPos.localPosition.z, maxDistance));
             //check mouse speed and displacement
             Poke();
+            anim.SetBool("Poking", true);
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             //reset mouse position
-            stick.position = restPos.position;
+            //stick.position = restPos.position;
+            anim.SetBool("Poking", false);
         }
     }
 
