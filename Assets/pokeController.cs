@@ -46,7 +46,7 @@ public class pokeController : MonoBehaviour
         //float mouseSpeed = (currentMousePosition - lastMousePosition).magnitude / Time.deltaTime;
         //lastMousePosition = currentMousePosition;
 
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             //move relative to the rotation
             //float horMovement = Input.GetAxis("Mouse Y");
