@@ -27,7 +27,7 @@ public class AIMovement : MonoBehaviour
     void Update()
     {
         Vector3 displacement = transform.position - previousPosition;
-        float displacementMag = displacement.magnitude * 100;
+        float displacementMag = Vector3.Distance(transform.position, previousPosition) * 100;
         previousPosition = transform.position;
         animator.SetFloat("Velocity", displacementMag);
 
