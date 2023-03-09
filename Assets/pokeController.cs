@@ -10,6 +10,7 @@ public class pokeController : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField] Animator anim;
+    AudioController ac;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,9 @@ public class pokeController : MonoBehaviour
             }
         }
         layerMask = LayerMask.GetMask("Poke");
+
+
+        ac = GetComponent<AudioController>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class pokeController : MonoBehaviour
         {
             Poke();
             anim.SetBool("Poking", true);
+            ac.PlayAudio("Poke");
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
