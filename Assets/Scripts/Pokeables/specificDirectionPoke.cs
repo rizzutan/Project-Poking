@@ -8,14 +8,17 @@ public class specificDirectionPoke : MonoBehaviour
     public Vector3 directionForce; 
     private Rigidbody rb;
 
-    AudioController ac;
+    [SerializeField] AudioController ac;
     [SerializeField] string soundName;
     [SerializeField] bool randomSound;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        ac = GetComponent<AudioController>();
+        if (ac == null)
+        {
+            ac = GetComponent<AudioController>();
+        }
     }
 
     public void directionPoke()
