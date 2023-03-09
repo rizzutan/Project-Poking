@@ -13,9 +13,9 @@ public class pipeTeleporter : MonoBehaviour
         playerMask = LayerMask.GetMask("Player");
         pokeMask = LayerMask.GetMask("Poke");
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == playerMask || other.gameObject.layer == pokeMask)
+        if (other.gameObject.layer == 3 || other.gameObject.layer == 7)
         {
             other.transform.position = teleport.position;
         }
