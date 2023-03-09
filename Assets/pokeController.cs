@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class pokeController : MonoBehaviour
 {
-    public bool leftHanded = false;
-    public float speed = 3f;
-    public float range = 10f;
+    public float range = 3f;
     public float radius = 1f;
-    public float minSpeed = 1f;
-    public float minDistance = 1f;
-    public float maxDistance = 6f;
     private Transform stick;
-    public Transform restPos;
-    private Vector3 lastMousePosition;
     private LayerMask layerMask;
-    private bool poke = false;
 
     [SerializeField] Animator anim;
     // Start is called before the first frame update
@@ -30,36 +22,19 @@ public class pokeController : MonoBehaviour
                 break;
             }
         }
-        if (leftHanded == true)
-        {
-            //restPos.position = new Vector3(-restPos.position.x, restPos.position.y, restPos.position.z);
-        }
-        //stick.position = restPos.position;
         layerMask = LayerMask.GetMask("Poke");
     }
 
     // Update is called once per frame
     void Update()
     {
-        //calculate mouse speed
-        //Vector3 currentMousePosition = Input.mousePosition;
-        //float mouseSpeed = (currentMousePosition - lastMousePosition).magnitude / Time.deltaTime;
-        //lastMousePosition = currentMousePosition;
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            //move relative to the rotation
-            //float horMovement = Input.GetAxis("Mouse Y");
-            //Vector3 pokeMovement = transform.TransformDirection(new Vector3(0f, 0f, horMovement));
-            //stick.localPosition = new Vector3(stick.localPosition.x, stick.localPosition.y, Mathf.Clamp(stick.localPosition.z + (horMovement * speed * Time.deltaTime), restPos.localPosition.z, maxDistance));
-            //check mouse speed and displacement
             Poke();
             anim.SetBool("Poking", true);
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            //reset mouse position
-            //stick.position = restPos.position;
             anim.SetBool("Poking", false);
         }
     }
