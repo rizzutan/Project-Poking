@@ -15,6 +15,8 @@ public class AIMovement : MonoBehaviour
     private float timerDuration = 3f;
     private float elapsedTime = 100f;
     private Vector3 previousPosition;
+    private float stuckTimerDuration = 15f;
+    private float stuckElapsedTime = 0f;
 
     void Start()
     {
@@ -30,9 +32,17 @@ public class AIMovement : MonoBehaviour
         float displacementMag = Vector3.Distance(transform.position, previousPosition) * 100;
         previousPosition = transform.position;
         animator.SetFloat("Velocity", displacementMag);
-
-        if (reachedWaypoint == true && elapsedTime >= timerDuration)
+        if (reachedWaypoint == false && stuckTimerDuration <= stuckElapsedTime)
         {
+            stuckElapsedTime = 0f;
+            int randomIndex = Random.Range(0, waypoints.Length);
+            randomTarget = waypoints[randomIndex];
+            agent.SetDestination(randomTarget.position);
+            reachedWaypoint = false;
+        }
+            if (reachedWaypoint == true && elapsedTime >= timerDuration)
+        {
+            stuckElapsedTime = 0f;
             int randomIndex = Random.Range(0, waypoints.Length);
             randomTarget = waypoints[randomIndex];
             agent.SetDestination(randomTarget.position);
