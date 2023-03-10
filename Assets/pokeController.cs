@@ -51,12 +51,21 @@ public class pokeController : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hit, range, layerMask))
         {
             Collider[] colliderArray = Physics.OverlapSphere(hit.point, radius, layerMask);
+            GameObject closestObject = null;
+            float closestDistance = Mathf.Infinity;
+
             for (int i = 0; i < colliderArray.Length; i++)
             {
-                if (colliderArray[i].GetComponent<Poke>())
+                float distance = Vector3.Distance(hit.point, colliderArray[i].transform.position);
+                if (distance < closestDistance)
                 {
-                    colliderArray[i].GetComponent<Poke>().PokeObject();
+                    closestObject = colliderArray[i].gameObject;
+                    closestDistance = distance;
                 }
+            }
+            if (closestObject != null)
+            {
+                closestObject.GetComponent<Poke>().PokeObject();
             }
         }
     }

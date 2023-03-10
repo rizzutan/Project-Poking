@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BGMusic
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 472cbe22194345641a79e1b8b70b3008, type: 3}
-  volume: 0.3
+  volume: 0.15
   pitchVariance: 0
   loop: 1
   isMusic: 0

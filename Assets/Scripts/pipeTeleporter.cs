@@ -15,7 +15,11 @@ public class pipeTeleporter : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 3 || other.gameObject.layer == 7)
+        if (other.gameObject.layer == 3)
+        {
+            other.transform.position = teleport.position;
+        }
+        if (other.gameObject.layer == 7)
         {
             other.transform.position = teleport.position;
         }
