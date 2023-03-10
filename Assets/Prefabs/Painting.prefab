@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 2075650721474530650}
   - component: {fileID: 2075650721474530653}
   - component: {fileID: 2075650721474530652}
+  - component: {fileID: 1750613958254126415}
   m_Layer: 3
   m_Name: Painting
   m_TagString: Untagged
@@ -188,8 +189,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb4462fd4deb8e48abaeb45ab4c0c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundName: 
-  randomSound: 1
+  soundName: Painting
+  randomSound: 0
+--- !u!114 &1750613958254126415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075650721474530654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0e2d9111ddb5d4795f886f7eaa7819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObjects:
+  - {fileID: 11400000, guid: 8843eefb2e0f23d48a0d6cc708de702a, type: 2}
 --- !u!1 &7555117139240136735
 GameObject:
   m_ObjectHideFlags: 0
