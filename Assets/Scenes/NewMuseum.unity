@@ -1865,6 +1865,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &403728357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1879,6 +1880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &403728358
@@ -2080,6 +2082,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &488834211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,6 +2097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &488834212
@@ -2661,6 +2665,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &566497544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2675,6 +2680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &566497545
@@ -2973,6 +2979,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &744827126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2987,6 +2994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &744827127
@@ -3428,6 +3436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 5
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &812267728
@@ -3445,6 +3454,7 @@ MonoBehaviour:
   force: 4
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &812267729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3639,7 +3649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852553553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.848, y: -5.0936, z: 85.1}
+  m_LocalPosition: {x: -36.848, y: -5.08, z: 85.1}
   m_LocalScale: {x: 72.513855, y: 10.325215, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5980,6 +5990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 1
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &1829974098
@@ -5997,6 +6008,7 @@ MonoBehaviour:
   force: 2
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &1829974099
 MonoBehaviour:
   m_ObjectHideFlags: 0
