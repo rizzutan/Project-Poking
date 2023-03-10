@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2ed4ed05c2f9448bcf0b9b57310fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPokeCount: 15
+  maxPokeCount: 5
   objectSwap: {fileID: 3677920165426329828, guid: 49a9e334cab734f7c9fa849d6d3beec4,
     type: 3}
   soundName: StoneChip
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2ed4ed05c2f9448bcf0b9b57310fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPokeCount: 10
+  maxPokeCount: 5
   objectSwap: {fileID: 8048410661058411244, guid: 69031d701805c434dbca024fe922fb3f,
     type: 3}
   soundName: StoneChip
