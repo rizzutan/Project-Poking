@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -162,6 +162,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &34664196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &34664197
@@ -625,6 +627,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &281585163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &281585164
@@ -3558,6 +3562,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &1273498307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3572,6 +3577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &1273498308
@@ -5258,6 +5264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 1
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &1901414039
@@ -5275,6 +5282,7 @@ MonoBehaviour:
   force: 2
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &1901414040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5817,6 +5825,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6382442853062638353}
   m_Mesh: {fileID: -5495902117074765545, guid: 997d70c608a3b204d81173fc9f6fea3d, type: 3}
+--- !u!1001 &1869940943444270997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.315662
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5102143
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.35621
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289767480296838409, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902424861675274641, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9,
+        type: 3}
+      propertyPath: m_Name
+      value: BGMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6cfe2ffdd6d4f3c4c8d9a08f33b40bd9, type: 3}
 --- !u!33 &1933252188303190852
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6147,6 +6224,7 @@ MonoBehaviour:
   force: 15
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &4599137801662085575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6829,6 +6907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 5
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &7790908418239504317
@@ -6846,6 +6925,7 @@ MonoBehaviour:
   force: 4
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &7790908418239504318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7033,6 +7113,7 @@ MonoBehaviour:
   force: 10
   soundName: 
   randomSound: 0
+  ac: {fileID: 0}
 --- !u!114 &8614870971064133606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7047,6 +7128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   directionForce: {x: 0, y: 10, z: 0}
+  ac: {fileID: 0}
   soundName: 
   randomSound: 0
 --- !u!114 &8614870971064133607
